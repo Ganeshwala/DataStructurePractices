@@ -27,6 +27,15 @@ public class CircularSinglyLinkedListMain {
 		System.out.println(csll.head.next.value);
 		System.out.println(csll.tail.next.value);
 		
+		//display circular Singly Linked list
+		csll.TraverseLinkedList();
+		
+		//searching value in list
+		csll.searchNode(8);
+		
+		//delete node 
+		csll.deleteNode(1);
+		csll.TraverseLinkedList();
 	}
 
 }
