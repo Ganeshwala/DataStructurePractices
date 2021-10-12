@@ -1,4 +1,4 @@
-package Com.DS.LinkedList;
+package Com.DS.LinkedList.CircularLinkedList;
 
 public class CircularSinglyLinkedList {
 
