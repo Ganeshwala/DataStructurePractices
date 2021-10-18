@@ -67,6 +67,7 @@ public class CircularDoublyLinkedList {
 	public void DeleteCDLL(int location) {
 		if(head==null) {
 			System.out.println("Linked list is empty");
+			
 		}
 		else {
 			if(location==0) {
