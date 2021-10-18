@@ -11,8 +11,10 @@ public class Main {
 		queue.enQueue(10);
 		queue.enQueue(1);
 		queue.enQueue(3);
+		System.out.println("first peek element of Queue"+queue.peek());
 		System.out.println("first element of"+queue.deQueue());
 		System.out.println("Second element of Queue"+queue.deQueue());
+		System.out.println("peek element after delete element is"+queue.peek());
 	}
 
 }

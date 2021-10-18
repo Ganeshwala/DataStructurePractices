@@ -48,4 +48,20 @@ public class QueueArray {
 			return removeElement;
 		}
 	}
+	
+	public int peek() {
+		if(isEmpty()) {
+			return -1;
+		}
+		else {
+			int firstElement = arr[beginningOfQueue];
+			return firstElement;
+		}
+	}
+	
+	public void deleteQueue() {
+		arr = null;
+		beginningOfQueue=-1;
+		topOfQueue=-1;
+	}
 }
