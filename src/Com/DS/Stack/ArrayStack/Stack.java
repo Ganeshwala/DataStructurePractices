@@ -4,7 +4,6 @@ public class Stack {
 
 	int[] arr;
 	int topOfStack;
-	
 	/*
 	 * Create Stack Using Array
 	 * Creating of Stack while Create & initializing class variable
