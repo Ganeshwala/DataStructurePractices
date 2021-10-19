@@ -31,4 +31,8 @@ public class CircularQueueArray {
 		}
 	}
 	
+	public void enQueue(int value){
+		
+	}
+	
 }
