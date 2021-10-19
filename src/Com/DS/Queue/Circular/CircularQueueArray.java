@@ -58,7 +58,7 @@ public class CircularQueueArray {
 			System.out.println("Circular Queue is Empty");
 			return -1;
 		}else {
-			if(arr[beginningOfQueue] == 0) {
+			if(arr[beginningOfQueue] == 0) { // condition is like beginningOdQueue == topOfQueue then set both to -1 or it means queue is empty now
 				return -1;
 			}else {
 				int deQueueResult = arr[beginningOfQueue];
