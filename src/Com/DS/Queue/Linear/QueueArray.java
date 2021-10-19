@@ -42,6 +42,7 @@ public class QueueArray {
 		}
 		else {
 			int removeElement = arr[beginningOfQueue];
+			arr[beginningOfQueue] = 0; // for empty cell I Used 0 , 0 = means empty / null value  
 			beginningOfQueue++;
 			if(beginningOfQueue>topOfQueue) {
 				beginningOfQueue=topOfQueue=-1;

@@ -1,5 +1,7 @@
 package Com.DS.Queue.Circular;
 
+import javax.swing.text.Position.Bias;
+
 public class CircularQueueArray {
 
 	int[] arr;
@@ -32,7 +34,55 @@ public class CircularQueueArray {
 	}
 	
 	public void enQueue(int value){
-		
+		if(isFull()) {
+			System.out.println("Circular Queue is Full");
+			return ;
+		}
+		else {
+			if(topOfQueue == -1) { // checking for empty queue
+				topOfQueue = beginningOfQueue = 0;
+				arr[topOfQueue] = value;
+				System.out.println("value inserted"+value);
+			}else {
+				if(topOfQueue == size-1) {
+					topOfQueue = 0;
+				}else {
+					topOfQueue++;
+				}
+				System.out.println("value"+value+" inserted at position"+topOfQueue);
+				arr[topOfQueue] = value;
+			}
+		}
+	}
+	
+	public int deQueue() {
+		if(isEmpty()) {
+			System.out.println("Circular Queue is Empty");
+			return -1;
+		}else {
+			if(arr[beginningOfQueue] == 0) {
+				return -1;
+			}else {
+				int deQueueResult = arr[beginningOfQueue];
+				arr[beginningOfQueue] = 0;
+				if(beginningOfQueue == size-1) {
+					beginningOfQueue = 0;
+				}else {
+					beginningOfQueue++;
+				}
+				return deQueueResult;
+			}
+		}
+	}
+	
+	public int peek() {
+		if(isEmpty()) {
+			System.out.println("Circular Queue is Empty");
+			return -1;
+		}else {
+			int peekResult = arr[beginningOfQueue];
+			return peekResult;
+		}
 	}
 	
 }
