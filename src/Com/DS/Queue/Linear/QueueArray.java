@@ -35,6 +35,7 @@ public class QueueArray {
 		topOfQueue++;
 		arr[topOfQueue]=value;
 	}
+	
 	public int deQueue() {
 		if(isEmpty()) {
 			return -1;
