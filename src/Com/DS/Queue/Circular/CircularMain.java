@@ -30,6 +30,8 @@ public class CircularMain {
 		System.out.println("element remove :"+cqa.deQueue());
 		System.out.println("element remove :"+cqa.deQueue());
 		System.out.println("element remove :"+cqa.deQueue());
+		
+		cqa.delete();
 	}
 
 }

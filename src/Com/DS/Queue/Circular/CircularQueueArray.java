@@ -1,7 +1,5 @@
 package Com.DS.Queue.Circular;
 
-import javax.swing.text.Position.Bias;
-
 public class CircularQueueArray {
 
 	int[] arr;
@@ -83,6 +81,13 @@ public class CircularQueueArray {
 			int peekResult = arr[beginningOfQueue];
 			return peekResult;
 		}
+	}
+	
+	public void delete() {
+		System.out.println("Circular Queue is deleted !!");
+		arr = null;
+		beginningOfQueue = topOfQueue = -1;
+		
 	}
 	
 }
