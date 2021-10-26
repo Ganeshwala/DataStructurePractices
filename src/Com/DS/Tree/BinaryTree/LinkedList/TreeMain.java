@@ -42,6 +42,10 @@ public class TreeMain {
 		System.out.println();
 		System.out.println("In-Order Traversal of Binary Tree");
 		btll.inOrderTraversal(btll.root);
+		
+		System.out.println();
+		System.out.println("level-Order Traversal of Binary Tree");
+		btll.levelOrder();
 	}
 
 }
