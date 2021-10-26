@@ -90,7 +90,7 @@ public class BinaryTreeLinkedList {
 		System.out.println("Value is not found in Tree");
 	}
 	
-	//Insertion node into Tree
+	//Insertion node value into Tree
 	public void insert(String value) {
 		BinaryTreeNode newNode = new BinaryTreeNode();
 		newNode.nodeValue = value;
