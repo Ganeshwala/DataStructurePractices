@@ -31,11 +31,14 @@ public class TreeMain {
 		N4.leftNode = N7;
 		N4.rightNode = N8;
 		btll.root = N1;
+		
 		System.out.println("Pre-Order Traversal of Binary Tree");
 		btll.preOrderTraversal(btll.root);
+		
 		System.out.println();
 		System.out.println("Post-Order Traversal of Binary Tree");
 		btll.postOrderTraversal(btll.root);
+		
 		System.out.println();
 		System.out.println("In-Order Traversal of Binary Tree");
 		btll.inOrderTraversal(btll.root);
