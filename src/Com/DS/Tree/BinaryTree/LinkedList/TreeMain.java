@@ -48,6 +48,19 @@ public class TreeMain {
 		btll.levelOrder();
 		System.out.println();
 		btll.SearchValue("N10");
+		
+		System.out.println();
+		btll.insert("N9");
+		btll.inOrderTraversal(btll.root);
+		System.out.println();
+		System.out.println("last node of tree is :");
+		System.out.println(btll.depestNode().nodeValue);
+		System.out.println();
+		btll.inOrderTraversal(btll.root);
+		System.out.println();
+		btll.deleteNode("N3");
+		btll.inOrderTraversal(btll.root);
+		
 	}
 
 }
