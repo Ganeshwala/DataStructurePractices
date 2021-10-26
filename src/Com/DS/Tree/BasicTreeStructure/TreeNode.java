@@ -17,7 +17,7 @@ public class TreeNode {
     }
     
     public String printTree(int level) {
-    	String result=" "+data+"\n";
+    	String result="  "+data+"\n";
     	String repeated = new String(new char[level]).replace("\0", result);
     	for(TreeNode node:children) {
     		result += node.printTree(level+1);
