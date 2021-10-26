@@ -66,6 +66,7 @@ public class BinaryTreeLinkedList {
 			}
 		}
 	}
+	
 	// search the value
 	public void SearchValue(String value) {
 		Queue<BinaryTreeNode> node = new LinkedList<BinaryTreeNode>();
@@ -188,5 +189,4 @@ public class BinaryTreeLinkedList {
 		root = null;
 		System.out.println("Binary tree has been successfully deleted !!!");
 	}
-	
 }
