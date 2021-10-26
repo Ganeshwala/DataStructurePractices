@@ -46,6 +46,8 @@ public class TreeMain {
 		System.out.println();
 		System.out.println("level-Order Traversal of Binary Tree");
 		btll.levelOrder();
+		System.out.println();
+		btll.SearchValue("N10");
 	}
 
 }
