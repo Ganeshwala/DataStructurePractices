@@ -10,7 +10,13 @@ public class BinaryArrayMain {
 		bt.InsertNode("N4");
 		bt.InsertNode("N5");
 		bt.InsertNode("N2");
-		
+		bt.preOrderTraversal(1);
+		System.out.println();
+		bt.inOrderTraversal(1);
+		System.out.println();
+		bt.postOrderTraversal(1);
+		System.out.println();
+		bt.levelOrderTraversal(1);
 	}
 
 }
