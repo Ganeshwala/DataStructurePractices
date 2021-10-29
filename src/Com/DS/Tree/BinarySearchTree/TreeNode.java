@@ -44,10 +44,4 @@ public class TreeNode {
 		InsertValueBST(root, value);
 	}
 	
-	public void SearchValue(TreeNode currentNode,int value) {
-		if(root == null) {
-			System.out.println();
-		}
-	}
-	
 }
