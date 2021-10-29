@@ -69,4 +69,32 @@ public class BinaryTree {
 		}
 		System.out.println();
 	}
+	
+	public void searchValue(String value) {
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] == value) {
+				System.out.println("value find "+arr[i]+" at position"+i);
+				return ;
+			}
+		}
+		System.out.println("Value not find");
+	}
+	
+	public void deleteValue(String value) {
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] == value) {
+				arr[i] = arr[lastIndex];
+				arr[lastIndex] = null; 
+				lastIndex--;
+				System.out.println("value deleted successfully ");
+				return ;
+			}
+		}
+		System.out.println("Value not find");
+	}
+	
+	public void deleteBinaryTree() {
+		arr = null;
+		System.out.println("Tree deleted successfully");
+	}
 }

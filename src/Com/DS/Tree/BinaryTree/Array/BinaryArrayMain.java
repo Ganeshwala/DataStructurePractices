@@ -21,6 +21,13 @@ public class BinaryArrayMain {
 		System.out.println();
 		System.out.println("level Order of Binary Tree");
 		bt.levelOrderTraversal(1);
+		System.out.println();
+		bt.searchValue("N5");
+		System.out.println();
+		bt.deleteValue("N3");
+		System.out.println();
+		System.out.println("level Order of Binary Tree");
+		bt.levelOrderTraversal(1);
 	}
 
 }
