@@ -16,7 +16,19 @@ public class BSTMain {
 		node.InsertNode(9);
 		node.InsertNode(0);
 		node.InsertNode(1);
+		System.out.println("Search calling");
+		node.searchNode(1);
 		node.InsertNode(5);
+		node.LevelOrder();
+		System.out.println("========");
+		node.preOrderTraversal(node.root);
+		System.out.println("========");
+		node.inOrderTraversal(node.root);
+		System.out.println("========");
+		node.postOrderTraversal(node.root);
+		System.out.println("Delete calling");
+		node.DeleteNode(node.root,8);
+		node.inOrderTraversal(node.root);
 	}
 
 }
