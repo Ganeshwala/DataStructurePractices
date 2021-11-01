@@ -52,8 +52,6 @@ public class TreeNode {
 			inOrderTraversal(root.leftNode);
 			System.out.print(root.nodeValue+" ");
 			inOrderTraversal(root.rightNode);
-		}else {
-			return ;
 		}
 	}
 	
@@ -62,8 +60,6 @@ public class TreeNode {
 			System.out.print(root.nodeValue+" ");
 			preOrderTraversal(root.leftNode);
 			preOrderTraversal(root.rightNode);
-		}else {
-			return ;
 		}
 	}
 	
