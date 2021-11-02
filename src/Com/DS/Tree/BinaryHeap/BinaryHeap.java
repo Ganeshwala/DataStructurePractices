@@ -1,9 +1,11 @@
 package Com.DS.Tree.BinaryHeap;
-
+/*
+	Heap Implementation using Array
+*/
 public class BinaryHeap {
 
 	int[] arr;
-	int treeSize;
+	int treeSize; // size of array
 	
 	public BinaryHeap(int size) {
 		arr = new int[size+1];
