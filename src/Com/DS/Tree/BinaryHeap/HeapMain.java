@@ -5,7 +5,13 @@ public class HeapMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryHeap heap = new BinaryHeap(5);
-		heap.peek();
+		heap.insertValue(10, "Max");
+		heap.insertValue(5, "Max");
+		heap.insertValue(15, "Max");
+		heap.insertValue(8, "Max");
+		heap.insertValue(1, "Max");
+		System.out.println(heap.peek());
+		heap.levelTraversal();
 	}
 
 }
