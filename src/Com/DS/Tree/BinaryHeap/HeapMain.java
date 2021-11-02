@@ -10,7 +10,11 @@ public class HeapMain {
 		heap.insertValue(15, "Max");
 		heap.insertValue(8, "Max");
 		heap.insertValue(1, "Max");
-		System.out.println(heap.peek());
+		//System.out.println(heap.peek());
+		heap.levelTraversal();
+		System.out.println("======");
+		System.out.println(heap.extractHeadOfHeap("Min"));
+		System.out.println("======");
 		heap.levelTraversal();
 	}
 

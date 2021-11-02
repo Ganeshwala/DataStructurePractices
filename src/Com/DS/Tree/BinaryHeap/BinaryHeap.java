@@ -65,4 +65,73 @@ public class BinaryHeap {
 		heapifyBottomToTop(treeSize, type);
 		System.out.println("Value "+value+" inserted successfully");
 	}
+	
+	public void heapifyTopToBottom(int index, String heapType) {
+		int left = 2*index;
+		int right = 2*index+1;
+		int swapChild = 0;
+		if(treeSize < left) {
+			return ;
+		}else {
+			if(heapType == "Max") {
+				if(treeSize == left) {
+					if(arr[index] < arr[left]) {
+						int temp = arr[index];
+						arr[index] = arr[left];
+						arr[left] = temp;
+					}
+					return ;
+				}
+				else {
+					if(arr[left] > arr[right]) {
+						swapChild = left;
+					}
+					else {
+						swapChild = right;
+					}
+					if(arr[index] < arr[swapChild]) {
+						int temp = arr[index];
+						arr[index] = arr[swapChild];
+						arr[swapChild] = temp;
+					}
+				}
+			}
+			if(heapType == "Min") {
+				if(treeSize == left) {
+					if(arr[index] > arr[left]) {
+						int temp = arr[index];
+						arr[index] = arr[left];
+						arr[left] = temp;
+					}
+					return ;
+				}
+				else {
+					if(arr[left] < arr[right]) {
+						swapChild = left;
+					}
+					else {
+						swapChild = right;
+					}
+					if(arr[index] > arr[swapChild]) {
+						int temp = arr[index];
+						arr[index] = arr[swapChild];
+						arr[swapChild] = temp;
+					}
+				}
+			}
+		}
+		heapifyTopToBottom(swapChild, heapType);
+	}
+	
+	public int extractHeadOfHeap(String heapType) {
+		if(isEmpty()) {
+			return -1;
+		}else {
+			int extractValue = arr[1];
+			arr[1] = arr[treeSize];
+			treeSize--;
+			heapifyTopToBottom(1,heapType);
+			return extractValue;
+		}
+	}
 }
