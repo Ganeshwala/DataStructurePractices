@@ -125,6 +125,7 @@ public class BinaryHeap {
 		heapifyTopToBottom(swapChild, heapType);
 	}
 	
+	
 	public int extractHeadOfHeap(String heapType) {
 		if(isEmpty()) {
 			return -1;
