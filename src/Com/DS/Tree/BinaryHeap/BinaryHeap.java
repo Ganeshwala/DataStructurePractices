@@ -39,6 +39,10 @@ public class BinaryHeap {
 		System.out.println();
 	}
 	
+	/*
+		implementing heapify method for insert element in Heap Tree 
+		this method work like first insert value at bottom of array and then we compare with each sub-tree and satisfied Heap condition. 
+	*/
 	public void heapifyBottomToTop(int index, String heapType) {
 		int parent = index / 2 ;
 		if(index <= 1) {
@@ -67,7 +71,10 @@ public class BinaryHeap {
 		heapifyBottomToTop(treeSize, type);
 		System.out.println("Value "+value+" inserted successfully");
 	}
-	
+	/*
+		implementing heapify method for extract root element in Heap Tree 
+		this method work like it compare root value with it children and swap it as per heap condition. so value move from top to bottom.
+	*/
 	public void heapifyTopToBottom(int index, String heapType) {
 		int left = 2*index;
 		int right = 2*index+1;
