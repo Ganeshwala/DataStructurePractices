@@ -19,7 +19,7 @@ public class AVLNode {
 		else
 			return node.heigth;
 	}
-	
+	// Level Traversal in AVL Tree 
 	public void levelTraversal() {
 		Queue<AVLNode> queue = new LinkedList<AVLNode>();
 		if(root == null) {
@@ -39,7 +39,7 @@ public class AVLNode {
 		}
 	}
 	 
-	// rotate Right
+	// Rotation from Right 
 	private AVLNode rotateRight(AVLNode disbalanceNode) {
 		AVLNode newRoot = disbalanceNode.left;
 		disbalanceNode.left = disbalanceNode.left.right;
@@ -49,7 +49,7 @@ public class AVLNode {
 		return newRoot;
 	}
 	
-	//Rotate left
+	//Rotation from left
 	private AVLNode rotateLeft(AVLNode disbalanceNode) {
 		AVLNode newRoot = disbalanceNode.right;
 		disbalanceNode.right = disbalanceNode.right.left;
@@ -67,7 +67,7 @@ public class AVLNode {
 			return getHieght(node.left) - getHieght(node.right);
 		}
 	}
-	
+	// Insert value into Tree 
 	private AVLNode insertAVLNode(AVLNode currentNode,int val) {
 		if(currentNode == null) {
 			AVLNode newNode =  new AVLNode();
