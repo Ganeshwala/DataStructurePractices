@@ -12,11 +12,17 @@ public class InputValue {
 		bsa.bubbleSort(a);
 		bsa.display(a);*/
 		
-		SelectionSort ss = new SelectionSort();
+		/*SelectionSort ss = new SelectionSort();
 		ss.display(a);
 		System.out.println("After Selection Sort");
 		ss.selectionSortAlgo(a);
-		ss.display(a);
+		ss.display(a);*/
+		
+		InsertionSort is = new InsertionSort();
+		is.display(a);
+		System.out.println("After Selection Sort");
+		is.insertionSortAlgo(a);
+		is.display(a);
 	}
 
 }
