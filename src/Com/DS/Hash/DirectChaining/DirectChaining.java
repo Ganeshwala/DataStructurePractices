@@ -44,4 +44,26 @@ public class DirectChaining {
 			}
 		}
 	}
+	
+	public boolean searchHashTable(String word) {
+		int index = modeASCIIFunction(word, hashTable.length);
+		if(hashTable[index] != null && hashTable[index].contains(word)) {
+			System.out.println("\""+word+"\""+" found in hashTable at location:"+index);
+			return true;
+		}else {
+			System.out.println(word+" not found in hash Table");
+			return false;
+		}
+	}
+	
+	public void deleteKeyHashTable(String word) {
+		int newIndex = modeASCIIFunction(word, hashTable.length);
+		boolean result = searchHashTable(word);
+		if(result == true) {
+			hashTable[newIndex].remove(word);
+			System.out.println("word "+ word+" is deleted from hash table");
+		}else {
+			System.out.println("word "+word+" not exsit !!!");
+		}
+	}
 }

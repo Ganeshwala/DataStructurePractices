@@ -15,6 +15,10 @@ public class MainDirectRun {
 		directChain.insertHashTable("Akash");
 		directChain.insertHashTable("Bhavya");
 		directChain.insertHashTable("Dhruv");
+		directChain.insertHashTable("Temp");
+		directChain.displayHashTable();
+		directChain.searchHashTable("Chintan");
+		directChain.deleteKeyHashTable("Temp");
 		directChain.displayHashTable();
 	}
 
