@@ -23,6 +23,12 @@ public class InputValue {
 		System.out.println("After Selection Sort");
 		is.insertionSortAlgo(a);
 		is.display(a);
+		
+		MergeSort m = new MergeSort();
+		m.display(a);
+		System.out.println("After Merge Sort");
+		m.mergeSort(a, 0, a.length-1);
+		m.display(a);
 	}
 
 }
